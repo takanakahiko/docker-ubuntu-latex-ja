@@ -1,0 +1,5 @@
+cp "/System/Library/Fonts/ヒラギノ角ゴシック W3.ttc" "texmf-local/fonts/opentype/hiragino/HiraginoSansR-W4.ttc"
+cp "/System/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc" "texmf-local/fonts/opentype/hiragino/HiraginoSans-W6.ttc"
+cp "/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc" "texmf-local/fonts/opentype/hiragino/HiraginoSans-W3.ttc"
+cp "/System/Library/Fonts/ヒラギノ明朝 ProN.ttc"    "texmf-local/fonts/opentype/hiragino/HiraginoSerif.ttc"
+cp "/System/Library/Fonts/ヒラギノ角ゴシック W8.ttc" "texmf-local/fonts/opentype/hiragino/HiraginoSans-W8.ttc"

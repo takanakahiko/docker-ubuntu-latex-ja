@@ -21,5 +21,9 @@ RUN set -x && \
       apt clean && \
       kanji-config-updmap-sys auto
 
+COPY texmf-local /usr/local/share/texmf
+
+RUN mktexlsr && kanji-config-updmap-sys hiragino-highsierra
+
 WORKDIR /data
 VOLUME ["/data"]
