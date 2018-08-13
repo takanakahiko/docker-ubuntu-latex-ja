@@ -9,6 +9,4 @@
 3. `cd ..`
 4. `./initFonts.sh`
 5. `docker build . -t ubuntu-latex-ja`
-6. `docker run --rm -ti -v $PWD/src:/data ubuntu-latex-ja`
-7. `cd <原稿のリポジトリ>`
-8. `make pdf` といきたいけど，今はonlyしか動きません...(図表未対応のため)
+6. `docker run --rm -v $PWD/src:/data ubuntu-latex-ja /bin/sh -c "cd rvbook-ja-test && make pdf"`

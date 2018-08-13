@@ -2,10 +2,10 @@ FROM ubuntu:xenial
 
 RUN set -x && \
       sed -i.bak -e "s%http://archive.ubuntu.com/ubuntu/%http://ftp.jaist.ac.jp/pub/Linux/ubuntu/%g" /etc/apt/sources.list && \
-      apt update && apt -y upgrade && \
-      apt -y install git wget software-properties-common make && \
+      apt-get update && apt-get -y upgrade && \
+      apt-get -y install git wget software-properties-common make && \
       apt-add-repository -y ppa:jonathonf/texlive && \
-      apt -y install texlive-full latexmk && \
+      apt-get -y install texlive-full latexmk && \
       wget http://mirrors.ctan.org/macros/latex/contrib/docmute.zip && \
       wget http://mirrors.ctan.org/macros/latex/contrib/listings.zip && \
       unzip docmute.zip && \
@@ -17,8 +17,8 @@ RUN set -x && \
       platex *.ins && \
       cd - && \
       mktexlsr && \
-      apt autoremove && \
-      apt clean && \
+      apt-get autoremove && \
+      apt-get clean && \
       kanji-config-updmap-sys auto
 
 COPY texmf-local /usr/local/share/texmf
